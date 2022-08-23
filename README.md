@@ -18,7 +18,8 @@ gcloud info gcloud config list
 
 2. Install Kubectl on ubuntu instance for jenkins master
 
-```snap install kubectl --classic
+```
+snap install kubectl --classic
 kubectl version --client
 ```
 3. Jenkins installation on Ubuntu Instance
