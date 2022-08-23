@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+		label "docker-slave"
+	}
 	tools {
 		maven 'Maven3'
 	}
