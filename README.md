@@ -1,4 +1,4 @@
-# Jenkins-Docker-kubernetes-gke-project
+# Jenkins-Docker-Kubernetes-GKE-Project
 
 Step: 1 Gcloud and Kubectl installation on Jenkins Master
 1. Checking gcloud installation on GCP ubuntu instance for jenkins master.
@@ -122,5 +122,7 @@ Step: 5 Setting up the credentials for linking the gke and docker hub.
  - Repository URL -- the URL of the github where all your files are there eg: https://github.com/tarunk0/Jenkins-Docker-kubernetes-gke-project.git
  - Branch - branch of your github repository in my case it is main. 
 
-  
-  
+  ![image](https://user-images.githubusercontent.com/92631457/186186288-ea19ec1f-edbf-46e5-90bc-b59dbd508672.png)
+
+  ![image](https://user-images.githubusercontent.com/92631457/186186169-aa4c6ac2-35a9-4804-b7a6-01b8fc15a059.png)
+
