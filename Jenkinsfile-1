@@ -13,7 +13,7 @@ spec:
 ''') {
     node(POD_LABEL) {
         container('docker') {
-            sh 'docker version && docker build -t tarunk0/myimage:${env.BUILD_ID} .'
+            sh 'docker version && docker build -t tarunk0/myimage:latest .'
         }
     }
 }
