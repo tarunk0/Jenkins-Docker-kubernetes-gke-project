@@ -1,3 +1,9 @@
+environment {
+    registry = "tarunk0/docker-test"
+    registryCredential = ‘dockerhub’
+  }
+
+{
 podTemplate(yaml: '''
 apiVersion: v1
 kind: Pod
@@ -10,12 +16,7 @@ spec:
     env:
       - name: DOCKER_TLS_CERTDIR
         value: ""
-''') 
-environment {
-    registry = "tarunk0/docker-test"
-    registryCredential = ‘dockerhub’
-  }
-
+''') }
 
 {
     node(POD_LABEL) {
