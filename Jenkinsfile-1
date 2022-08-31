@@ -17,7 +17,7 @@ spec:
             sh 'docker version && cd stable/alpine/ && docker build -t tarunk0/test-image .'
             withCredentials([string(credentialsId: 'dockerhub', variable: 'dockerhub')]) {
             				sh "docker login -u tarunk0 -p ${dockerhub}"
-
+              }
             sh 'docker push tarunk0/test-image'
         }
     }
