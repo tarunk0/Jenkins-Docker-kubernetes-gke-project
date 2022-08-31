@@ -1,9 +1,8 @@
-environment {
+pipeline {
+  environment {
     registry = "tarunk0/docker-test"
     registryCredential = ‘dockerhub’
   }
-
-{
 podTemplate(yaml: '''
 apiVersion: v1
 kind: Pod
@@ -16,7 +15,7 @@ spec:
     env:
       - name: DOCKER_TLS_CERTDIR
         value: ""
-''') }
+''') 
 
 {
     node(POD_LABEL) {
@@ -24,4 +23,5 @@ spec:
         sh 'docker.build registry + ":$BUILD_NUMBER"'
         }
     }
+}
 }
