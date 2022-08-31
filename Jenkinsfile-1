@@ -12,8 +12,9 @@ spec:
         value: ""
 ''') {
     node(POD_LABEL) {
+        git 'https://github.com/tarunk0/Jenkins-Docker-kubernetes-gke-project.git'
         container('docker') {
-            sh 'docker version && docker build -t tarunk0/myimage:latest .'
+        sh 'docker version && docker build -t tarunk0/myimage:latest .'
         }
     }
 }
